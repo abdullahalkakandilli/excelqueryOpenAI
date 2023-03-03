@@ -42,7 +42,7 @@ uploaded_file = st.file_uploader(
 )
 
 if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_excel(uploaded_file)
     df = df.to_json()
     file_container = st.expander("Check your uploaded .csv")
     file_container.write(df)
