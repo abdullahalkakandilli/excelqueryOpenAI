@@ -51,7 +51,7 @@ if uploaded_file is not None:
 else:
     st.info(
         f"""
-            👆 Upload a Excel file first - max 50 row! Sample to try: [biostats.csv](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv)
+            👆 Upload a Excel file first - max 50 row! Sample to try: [testopenai.xlsx](https://uploads-ssl.webflow.com/62d5695106896ecf208fc5eb/6401ba5168e66974c7b161b5_testopnai.xlsx)
             """
     )
     st.stop()
