@@ -35,7 +35,7 @@ with c2:
         )
 uploaded_file = st.file_uploader(
     " ",
-    type="Excel",
+    type="excel",
     key="1",
     help="To activate 'wide mode', go to the hamburger menu > Settings > turn on 'wide mode'",
 
