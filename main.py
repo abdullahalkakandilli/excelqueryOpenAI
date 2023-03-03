@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import openai
 openai.api_key = os.getenv('OPEN_API_KEY')
-
+result = ""
 def _max_width_():
     max_width_str = f"max-width: 1800px;"
     st.markdown(
@@ -43,9 +43,10 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
-    df = df.to_json()
     file_container = st.expander("Check your uploaded .csv")
     file_container.write(df)
+    df = df.to_json()
+
 
 else:
     st.info(
