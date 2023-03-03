@@ -81,7 +81,5 @@ if submitted:
 
     result = get_values(question_input)
 
-c4, c5 = st.columns([6, 1])
 
-with c4:
-    st.text(result)
+st.write(result)
