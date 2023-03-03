@@ -63,7 +63,7 @@ def get_values(question_input):
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system",
-                 "content": "Answer the question truthfully based on the given dataframe below. Write short explanation by using bullet points and find other details about the given question. Question: " + question_input},
+                 "content": "Answer the question truthfully based on the given dataframe below. Write short explanation by using bullet points and find other details about the given question. Don't care data quality issues like missing values. Question: " + question_input},
                 {"role": "system", "content": df},
             ]
         )
