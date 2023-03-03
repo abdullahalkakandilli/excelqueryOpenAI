@@ -69,8 +69,8 @@ def get_values(question_input):
         )
         content_value = output['choices'][0]['message']['content']
     except:
-        st.write("Please upload a small data - 50 row for the test purposes only")
-
+        content_value = ("Please upload a small data - 50 row for the test purposes only")
+    return content_value
 form = st.form(key="annotation")
 with form:
     question_input = st.text_input("Enter your query here")
